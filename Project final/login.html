@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login</title>
+	<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+	<!-- NAVBAR BLOCK -->
+	<nav class="nav" id="navbar">
+		<div class="container">
+			<div class="navbar-inner">
+				<div></div>
+				<ul class="navbar-nav">
+					<li class="nav-item ">
+						<a class="nav-link" href="#" data-scroll="#contacts">Contacts</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link" href="#">Delivery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Payment</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-scroll="#blog">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" data-scroll="#news">Catalog</a>
+					</li>
+				</ul>
+				<span class="login after-login" onclick="window.location.reload()">Log In</span>
+			</div>
+		</div> 
+	</nav>
+
+
+	
+	<div class="registor-modal">
+			<div class="registor-modal_inner">
+				<h1 class="title-modal">CREAT ACCOUNT</h1>
+				<input type="text" placeholder="Your name" id="username">
+				<input type="text" placeholder="Your email" id="email">
+				<input type="password" placeholder="Password" id="password">
+				<input type="password" placeholder="Repeat your password" id="password2">
+				<span id="massage"></span>
+				<button class="btn-modal" onclick="registration()">SIGN UP</button>
+			</div>
+			<div class="close" onclick="modalClose()"><img src="svg/close.svg" alt="close" width="24px"></div>
+	</div>
+	<div class="ok">
+		<div class="ok-inner">
+			<div class="pic"><img src="svg/check.svg" alt="" width="100px"></div>
+			<div class="title">You have successfully registered on the site!</div>
+		</div>
+	</div>
+
+
+
+	<!-- LOGIN BLOCK -->
+	<section class="login-page">
+		<div class="container-login">
+			<div class="login-inner">
+				<h1 class="title-login">Login to the buyer's office</h1>
+				<div class="login-block">
+					<form>
+						<label for="E-mail">E-mail</label>
+						<input type="text" id="email-l" placeholder="Write email">
+					</form>
+					<form class="sec">	
+						<label for="password">Password</label>
+						<input type="password" id="pass-log" placeholder="Write password">
+					</form>
+					<span id="mass-log"></span>
+					<div class="btn-case">
+					    <a class="login-btn" onclick="checkAcc()">Login</a>
+					    <button class="dot-btn" onclick="modalOpen()">Register</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+
+	<!-- FOOTER BLOCK -->
+	<footer class="footer" id="contacts">
+		<div class="container">
+			<div class="footer-inner">
+				<div class="logo-footer">
+					<img src="img/Green and White Fair Trade Logo (1).png" alt="logo site" width="200px" class="logo">
+				</div>
+				<div class="menu">
+					<h4 class="title-list">LOWER MENU</h4>
+					<ul class="list-menu">
+						<li><a href="" class="list-menu_item">Privacy policy and offer</a></li>
+						<li><a href="" class="list-menu_item">Terms of use</a></li>
+						<li><a href="" class="list-menu_item">Exchange and return conditions</a></li>
+						<li><a href="" class="list-menu_item">Blog</a></li>
+						<li><a href="" class="list-menu_item">Feedback</a></li>
+						<li><a href="" class="list-menu_item">Catalog</a></li>
+						<li><a href="" class="list-menu_item">Contacts</a></li>
+						<li><a href="" class="list-menu_item">Delivery</a></li>
+						<li><a href="" class="list-menu_item">Payment</a></li>
+						<li><a href="" class="list-menu_item">Why choose us</a></li>
+					</ul>
+				</div>
+				<div class="contact">
+					<div class="tel-num">+7(495)123-45-67</div>
+					<a href="" class="tel-num_link">Backcall</a>
+					<ul class="list-soc_media">
+						<li><a href="" class="soc_media-item">
+							<img src="svg/vk.svg" alt="" width="18px" class="color-soc">
+						</a></li>
+						<li><a href="" class="soc_media-item">
+							<img src="svg/twitter.svg" alt="" width="18px" class="color-soc">
+						</a></li>
+						<li><a href="" class="soc_media-item">
+							<img src="svg/facebook.svg" alt="" width="18px" class="color-soc">
+						</a></li>
+						<li><a href="" class="soc_media-item">
+							<img src="svg/instagram.svg" alt="" width="18px" class="color-soc">
+						</a></li>
+						<li><a href="" class="soc_media-item">
+							<img src="svg/odnoklassniki.svg" alt="" width="18px" class="color-soc">
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<hr class="hr-footer">
+			<span class="footer-by_name">Powered by Sultan</span>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/login.js"></script>
+</body>
+</html>
